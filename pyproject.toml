@@ -11,6 +11,7 @@ fastapi = "^0.108.0"
 uvicorn = "^0.25.0"
 pytest = "^7.4.4"
 httpx = "^0.26.0"
+pydantic = "^2.5.3"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.12.2"
@@ -20,6 +21,6 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
-run = "uvicorn main:app --reload"
-test = "pytest -v test.py"
+run = "uvicorn app.main:app --reload"
+test = "pytest -v"
 kill = "kill -9 $(lsof -t -i:8000)"

@@ -27,4 +27,10 @@ https://github.com/luizgcmiranda/API-Validate/pull/1 (Aprovar o request pelo git
 git checkout main
 
 
-git checkout -B pegaproduto
+git checkout -B pegaproduto (criar branch para cada card no jira para ter rastreabilidade)
+
+https://render.com/
+
+
+poetry add pydantic
+
