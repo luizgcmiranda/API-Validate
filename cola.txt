@@ -23,3 +23,8 @@ pip freeze >> requirements-dev.txt
 pip freeze >> requirements.txt
 
 git checkout -B produtos
+https://github.com/luizgcmiranda/API-Validate/pull/1 (Aprovar o request pelo github e realizar o merge, depois deleta a branch)
+git checkout main
+
+
+git checkout -B pegaproduto
