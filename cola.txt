@@ -14,3 +14,12 @@ kill = "kill -9 $(lsof -t -i:8000)"
 
 poetry add pytest
 poetry add httpx (necessário para usar o TestClient do pytest)
+
+criar pasta gitub - workflows - main.yml
+
+adicionar run: pytest -v test.py
+
+pip freeze >> requirements-dev.txt
+pip freeze >> requirements.txt
+
+git checkout -B produtos
