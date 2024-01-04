@@ -15,7 +15,7 @@ def test_listar_produtos(): #Response
     assert response.status_code == 200
     assert len(response.json()) == 3
 
-def test_pegar_produtos(): #Response
+def test_buscar_produto(): #Response
     response = client.get("/produtos/1")
     assert response.status_code == 200
     assert response.json() == {
