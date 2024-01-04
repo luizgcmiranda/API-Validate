@@ -34,3 +34,16 @@ https://render.com/
 
 poetry add pydantic
 
+docker pull postgres
+
+Criar dockerfile.
+
+docker build -t minha_imagem_postgres .
+
+docker run --name meu_container_postgres -p 5432:5432 -v meu_volume_postgres:/var/lib/postgresql/data -d minha_imagem_postgres
+
+
+*SQL*
+
+poetry add python-dotenv
+poetry add sqlalchemy psycopg2-binary
