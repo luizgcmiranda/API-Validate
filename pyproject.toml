@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "api-validate"
+version = "0.1.0"
+description = ""
+authors = ["luismiranda"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.108.0"
+uvicorn = "^0.25.0"
+pytest = "^7.4.4"
+httpx = "^0.26.0"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+run = "uvicorn main:app --reload"
+test = "pytest -v"
+kill = "kill -9 $(lsof -t -i:8000)"

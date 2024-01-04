@@ -1,0 +1,16 @@
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+poetry init
+poetry shell (ativar .venv), para sair é exit.
+ignr -p python > .gitignore (npm install -g ignr)
+poetry add fastapi uvicorn
+
+(adicionar no pyproject.toml)
+poetry add taskipy --dev
+
+[tool.taskipy.tasks]
+run = "uvicorn main:app --reload"
+test = "pytest -v"
+kill = "kill -9 $(lsof -t -i:8000)"
+
+poetry add pytest
+poetry add httpx (necessário para usar o TestClient do pytest)
